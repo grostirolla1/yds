@@ -41,7 +41,7 @@ class Task:
 
         # interval inside task
         if self.release < start and self.dead > end:
-            self.dead -= distance
+            self.dead = end
             return self
 
         # task covers beginning of interval
